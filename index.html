@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/normal.css">
+    <title>About-Me Quiz</title>
+</head>
+
+<div id="controls">
+    <div id="info">
+      <button id="scores" href="">View High Scores</button>
+      <div id="timer"><p>Time: <span id="time">0</span></p></div>
+    </div>
+  </div>
+    
+  <!-- Starting message in quiz -->
+  <div id="positionWrapper">
+    <section id="intro">
+      <h1>About Me Quiz Challenge</h1>
+      <p>Try to answer the following about-me questions within the time limit.
+        Keep in mind that incorrect answers will penalize your score-time by ten seconds.
+      </p>
+      <button>Start Quiz</button>
+  
+    </section>
+  
+    <section id="quizHolder" class="hide">
+      <p id="title"></p>
+      <!-- Buttons for options in questions-->
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <div id="scoreIndicator" class="invisible">
+        <p>&nbsp;</p>
+      </div>
+    </section>
+  
+<!-- Finish quiz message -->
+    <section id="finish" class="hide">
+      <h1>All Done</h1>
+      <p>Your final score is&nbsp;<span id="score"></span></p>
+      <div id="records">
+        <p>Enter initials: </p><input id="initials" type="text"> <button>Submit</button>
+      </div>
+      <div id="errorIndicator" class="invisible">
+        <p>&nbsp;</p>
+      </div>
+    </section>
+  
+<!-- Highscores section -->
+    <section id="highScores" class="hide">
+      <h1>High Scores</h1>
+      <div>
+  
+      </div>
+      <button id="reset">Go Back</button> <button id="clearScores">Clear Highscores</button>
+    </section>
+  </div>
+
+
+<script src="assets/js/questions.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</html>
