@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	let recordsHtmlReset = () => {
 		queryElement('#highScores div').innerHTML = "";
 		var i = 1;
-        //What is (a,b)??????
 		recordsArray.sort((a, b) => b.score - a.score);
 		Array.from(recordsArray).forEach(check =>
 		{
@@ -125,7 +124,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		check.addEventListener('click', function (event) {
 			// Handles events if a question is answered correctly
 			if (this.innerHTML.substring(3, this.length) === questions[qCount].answer) {
-                //What is "this" is the "if" line
 				score = score + 1;
 				qCount = qCount + 1;
 				quizUpdate("Correct");
